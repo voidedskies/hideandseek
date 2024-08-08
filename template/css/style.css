@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-size: 25px;
+}
+
+/* Panel style */
+.story-panel {
+    height: 100vh;
+    background-color: var(--pri-bg);
+    color: var(--pri-tx);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 200px;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-family: malaga-narrow, serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 30px;
+    font-size: 63px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+/* Paragraph */
+p {
+    margin: 20px;
+    line-height: 25px;
+    font-family: mrs-eaves, serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 139.1%;
+}
+
+/* Buttons */
+.btn {
+    color: var(--pri-bg);
+    background-color: var(--pri-tx);
+    padding: 7px 14px;
+    margin: 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: malaga-narrow, serif;
+    font-weight: 800;
+    font-style: normal;
+    display: inline-block;
+}
+
+.btn:hover {
+    animation: shake 1s infinite, colourchange 0.7s;
+    animation-fill-mode: forwards;
+    }
+
+/* Entity Words */
+em { 
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 27px;
+}
+
+/* Panel Colours */
+#start, #elsewhere, #endcupgood {
+    --pri-bg: #A51235;
+    --pri-tx: white;
+}
+ 
+#bedroom, #pullvent, #screwdriver, #kitchen, #incup {
+    --pri-bg: #61041B;
+    --pri-tx : #FCE5E5;
+}
+
+#window, #closet, #fridge, #cupboard {
+    --pri-bg: #310000;
+    --pri-tx : #FA4C4C;
+}
+
+#endcupbad, #underbed, #infridge, #endwindow, #ventend {
+    --pri-bg:black;
+    --pri-tx: crimson;
+}
+
+/* Images */
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.EntityAndFloor {
+    position: relative;
+    left: 206.5px
+}
+
+.BedFrame {
+    position: relative;
+    right: 206.5px
+}
+
+.KitchenDoor{
+    position: relative;
+    right: 106px;
+}
+
+.KitchenFreedom {
+    animation: bright 4s infinite;
+    position: relative;
+    left: 100px;
+}
+
+.MouthOpen {
+    position: absolute;
+    animation: mouth 2s infinite;
+}
+
+/* ______ Animations ______ */
+
+
+/* Button Animation */
+
+@keyframes shake {
+   0% {transform: rotate(2deg);}
+   50% {transform: rotate(0deg);}
+   75% {transform: rotate(2deg);}
+   100% {transform: rotate(0deg);}
+}
+
+@keyframes colourchange {
+   0% {
+        color: var(--pri-bg);
+        background-color: var(--pri-tx);
+    }
+   100% {
+        background-color: black;
+        color: white;
+   }
+}
+
+/* Bed End Animation */
+.HandWithSheet {animation: handMove 5s infinite ease;}
+@keyframes handMove {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-55px);
+    }
+    }
+
+
+/* Cupboard Good End Animation */
+
+@keyframes bright {
+    0% {
+        filter: contrast(200%) saturate(1); 
+    }
+    100% {
+        filter: contrast(250%) saturate(3);
+    }
+}
+
+
+/* Window End Animation */
+
+@keyframes mouth {
+    0% {
+        filter: opacity(0); 
+    }
+    50% {
+        filter: opacity(1); 
+    }
+    100% {
+        filter: opacity(0);
+    }
+}
+
+

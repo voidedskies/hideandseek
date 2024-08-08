@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Seek</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/hhp6hwr.css">
+    <link href="/root/template/css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+<!-- Start Panel -->
+    <div class="story-panel" id="start">
+        <div class="story-panel--text">
+            <h1>Hide and Seek</h1>
+            <p>You have been challenged to a game of hide and seek by an entity. It has given you a very short amount of time to find a hiding spot. There are severe consequences if it finds you and you don’t feel like finding out what these consequences could be. You feel like this creature may be using some trickery to determine whether or not you will be found.</p>
+            <p>You look around the place you are standing to find an adequate place to hide. You take note of two rooms, the kitchen and the bedroom. You also consider finding a way to escape but there are no doors in sight.</p>
+            <p>Where would you like to hide?</p>
+            <nav>
+                <a href="#kitchen" class="btn">The Kitchen</a>
+                <a href="#bedroom" class="btn">The Bedroom</a>
+            </nav>
+        </div>
+    </div>
+
+<!-- ______________ KITCHEN ______________ -->
+<!-- Kitchen -->
+    <div class="story-panel" id="kitchen">
+        <div class="story-panel--text">
+            <h2>The Kitchen</h2>
+            <p>You enter the kitchen. You start looking around but take notice of only two places, the cupboard and the fridge.</p>
+            <p>The cupboard is under the countertop near the sink. From the outside it looks like it could easily fit a bunch of pots, pans and other large kitchen items so you figure that you could easily fit in there.</p>
+            <p>The fridge is moderately sized and tucked away next to the wall. You stand next to it to get a gauge of your height next to it. You figure that as long as the shelves are removable you could fit in here.</p>
+            <nav>
+                <a href="#cupboard" class="btn">Cupboard</a>
+                <a href="#fridge" class="btn">Fridge</a>
+                <a href="#bedroom" class="btn">Go To Bedroom</a>
+            </nav>
+        </div>
+    </div>
+
+<!-- Fridge -->
+<div class="story-panel" id="fridge">
+    <div class="story-panel--text">
+        <h2>Fridge</h2>
+        <p>You approach the fridge and it has some shelves in it. You tug at the shelves and they are loose enough to remove. </p>
+        <p>What will you do?</p>
+        <nav>
+            <a href="#infridge" class="btn">Go In</a>
+            <a href="#elsewhere" class="btn">Look Elsewhere</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Cupboard -->
+<div class="story-panel" id="cupboard">
+    <div class="story-panel--text">
+        <h2>Cupboard</h2>
+        <p>You approach the cupboard and open the door.</p>
+        <p>You can easily fit in here.</p>
+        <nav>
+            <a href="#incup" class="btn">Go In Cupboard</a>
+            <a href="#elsewhere" class="btn">Look Elsewhere</a>
+        </nav>
+    </div>
+</div>
+
+<!-- In Cupboard -->
+<div class="story-panel" id="incup">
+    <div class="story-panel--text">
+        <h2>Inside Cupboard</h2>
+        <p>You climb inside the cupboard.</p>
+        <p>You hear a knock.</p>
+        <nav>
+            <a href="#endcupbad" class="btn">Hold Your Breath</a>
+            <a href="#endcupbad" class="btn">Do Nothing</a>
+            <a href="#endcupgood" class="btn">Knock Back</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Bad End Cupboard -->
+<div class="story-panel" id="endcupbad">
+    <div class="story-panel--text">
+        <h2>The entity waits.</h2>
+        <p>You hold as still as possible hoping that the entity leaves soon. You close your eyes for a while and then you open them. You shift slightly trying to see if there’s any cracks in the cupboard where you could peer out to see if you are safe to leave. You feel that the coast might be clear but you don’t dare to open the cupboard until you know for certain that it has left.</p>
+        <p>Suddenly the entity rips the door off of its hinges. It grabs you out of your hiding spot and says “<em>I win.</em>”</p>
+
+        <img class="BadCup" src="/root/template/images/CupBad.png" alt="Drawn image of the entity looking into a cupboard.">
+
+        <h3>Ending 1 of 6, you die.</h3>
+        <nav>
+            <a href="#start" class="btn">Restart</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Good End Cupboard -->
+<div class="story-panel" id="endcupgood">
+    <div class="story-panel--text">
+        <h2>The entity waits for a response. </h2>
+        <p>You decide to knock back. “<em>You win</em>” you hear the shrill voice as the entity turns and slowly walks away. You stay still for awile wondering if this was a trick but ultimately decide to open the cupboard door. </p>
+        <p>You climb your way outside of the cupboard and stand up to look around. You notice a door. You didn’t see a door there before. You approach the door and open it.</p>
+        <p>It is pretty outside the door. It’s almost as if it leads you to a different dimension. It was freedom compared to this hellish game of hide and seek. You choose to go into the door and close it behind you. You are free.</p>
+
+        <div class="EndCupboardGood">
+            <img class="KitchenFreedom" src="/root/template/images/Kitchen_Freedom.png" alt="Drawn image of a green meadow and blue sky.">
+
+            <img class="KitchenDoor" src="/root/template/images/KitchenDoor.png" alt="Drawn creepy image of a tiled floor and door frame.">
+        </div>
+
+        <h3>Ending 2 of 6, you win.</h3>
+        <nav>
+            <a href="#start" class="btn">Restart</a>
+        </nav>
+    </div>
+</div>
+
+<!-- End Fridge-->
+<div class="story-panel" id="infridge">
+    <div class="story-panel--text">
+        <h2>You remove the shelves.</h2>
+        <p>Shoving them into a cupboard in hopes that it helps conceal where you will be hiding. You climb into the fridge.</p>
+        <p>Shortly after you hear footsteps approach a cupboard and pause for a moment. You hear the creature rip the cupboard door off its hinges and throw it to the ground. There are a few more footsteps, you can hear the entity breathe angrily. After a few more moments it leaves and the world around you is silent. 
+        </p>
+        <p>“<em>You win</em>” it says, its shrill voice feels like it’s right in your ears.</p>
+        <p>You push at the fridge door to release yourself from your hiding spot but the door doesn’t budge. You slowly suffocate. Didn’t you hear the PSAs about hiding in fridges?</p>
+
+        <img class="FridgeEnd" src="/root/template/images/FridgeEnd.png" alt="Drawn inside of a fridge.">
+
+        <h3>Ending 3 of 6, you won but at what cost?</h3>
+        <nav>
+            <a href="#start" class="btn">Restart</a>
+        </nav>
+    </div>
+</div>
+
+<!-- ______________ LOOK ELSEWHERE ______________  -->
+
+<!-- Look Elsewhere -->
+<div class="story-panel" id="elsewhere">
+    <div class="story-panel--text">
+        <h2>Look Elsewhere</h2>
+        <p>You decide to look elsewhere as this place doesn't look suitable.</p>
+        <nav>
+            <a href="#kitchen" class="btn">Go To Kitchen</a>
+            <a href="#bedroom" class="btn">Go To Bedroom</a>
+        </nav>
+    </div>
+</div>
+
+<!-- ______________ BEDROOM ______________  -->
+
+<!-- Bedroom -->
+<div class="story-panel" id="bedroom">
+    <div class="story-panel--text">
+        <h2>The Bedroom</h2>
+        <p>You enter the bedroom and look around. You take note of three places. The closet, the bed and the window.</p>
+        <p>There may be a sneaky place to hide in the closet but it could mean taking more time to move things around. You could try to open the window and leave this place but that could be considered cheating. You could hide under  the bed but it may be too easy of a spot.</p>
+        <p>Where do you hide?</p>
+        <nav>
+            <a href="#underbed" class="btn">Under The Bed</a>
+            <a href="#window" class="btn">Window</a>
+            <a href="#closet" class="btn">Closet</a>
+            <a href="#kitchen" class="btn">Go To Kitchen</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Window -->
+<div class="story-panel" id="window">
+    <div class="story-panel--text">
+        <h2>The Window</h2>
+        <p>You approach the window.</p>
+        <p>What do you do?</p>
+        <nav>
+            <a href="#endwindow" class="btn">Open Window</a>
+            <a href="#elsewhere" class="btn">Look Elsewhere</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Closet -->
+<div class="story-panel" id="closet">
+    <div class="story-panel--text">
+        <h2>The Closet</h2>
+        <p>You enter the closet and look around. You see a vent.</p>
+        <p>This could be a good place to hide if you can get the cover off.</p>
+        <nav>
+            <a href="#screwdriver" class="btn">Look For Screwdriver</a>
+            <a href="#pullvent" class="btn">Pull At Vent</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Screwdriver -->
+<div class="story-panel" id="screwdriver">
+    <div class="story-panel--text">
+        <h2>You find a screwdriver</h2>
+        <p>You remove the vent cover.</p>
+        <p>You hear the bedroom door open.</p>
+        <nav>
+            <a href="#ventend" class="btn">Hide In Vent</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Pull Vent -->
+<div class="story-panel" id="pullvent">
+    <div class="story-panel--text">
+        <h2>You pull at the vent</h2>
+        <p>It does not budge.</p>
+        <nav>
+            <a href="#closet" class="btn">Return To Vent</a>
+        </nav>
+    </div>
+</div>
+
+<!-- End Vent -->
+<div class="story-panel" id="ventend">
+    <div class="story-panel--text">
+        <h2>You hid successfully.</h2>
+        <p>The entity walked into the closet and looked around. It appears to look directly at you but after a few moments of staring it turns away and leaves. “<em>You win.</em>” It says from a distance.</p>
+        <p>You breathe a sigh of relief and begin to push at the vent cover. It doesn’t budge. You start to push harder more frantically but it seems to have become a solid barrier. You start to feel panicked and begin looking around. You turn around and try to find a way out but it only leads to dead ends. You are trapped.</p>
+
+        <img class="EndVent" src="/root/template/images/VentEnd.png" alt="Drawn image of the inside of a vent.">
+
+        <h3>Ending 6 of 6, you win but you slowly starve.</h3>
+        <nav>
+            <a href="#start" class="btn">Restart</a>
+        </nav>
+    </div>
+</div>
+
+<!-- End Window -->
+<div class="story-panel" id="endwindow">
+    <div class="story-panel--text">
+        <h2>You approach the window.</h2>
+        <p>You look around the window frame. It seems like it is a simple glass window with a removable screen. You begin your attempts to remove the screen which makes some noise. You hope that this doesn’t alert the entity. </p>
+        <p>You hear footsteps and a chill goes down your spine. You freeze and remove your hands from the window. You turn around and see it standing there. “<em>Where are you going?</em>” It says, its neck extending to look closer at you. The entity looks angry. “<em>You are not allowed to leave.</em>” </p>
+
+        <div class="Window">
+            <img class="MouthOpen" src="/root/template/images/WindowEnd_MouthOpen.png" alt="Drawn image of a monster with a very long neck.">
+
+            <img class="MouthClosed" src="/root/template/images/WindowEnd_MouthClosed.png" alt="Drawn image of a monster with a very long neck.">
+        </div>
+
+        <h3>Ending 5 of 6, you die.</h3>
+        <nav>
+            <a href="#start" class="btn">Restart</a>
+        </nav>
+    </div>
+</div>
+
+<!-- End Bed -->
+<div class="story-panel" id="underbed">
+    <div class="story-panel--text">
+        <h2>You look under the bed.</h2>
+        <p>You decide that you can fit here and lay down on your side. You slide yourself under the bed. It is a tight fit. Your chest feels squished against the wooden floor and your back against the bed frame. Your breathing is shallow, full of fear. You see the feet of the creature approach you. You hold your breath.</p>
+        <p>The entity bends over and slowly lifts the sheet that is covering the gap between the bed and the floor. “<em>I found you.</em>'' It says, it lowers its head so you can see a large teethy grin. It grabs you.</p>
+        
+        <div class="bedend">
+            <img class="EntityAndFloor" src="/root/template/images/BedEnd_EntityAndFloor.png" alt="Drawn creepy image of the entity.">
+
+            <img class="HandWithSheet" src="/root/template/images/BedEnd_HandWithSheet.png" alt="Drawn image of the entity's hand lifting a sheet.">
+
+            <img class="BedFrame" src="/root/template/images/BedEnd_BedFrame.png" alt="Drawn image of the bottom of a bed frame.">
+
+        </div>
+        
+        <h3>Ending 4 of 6, you die.</h3>
+        <nav>
+            <a href="#start" class="btn">Restart</a>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>
